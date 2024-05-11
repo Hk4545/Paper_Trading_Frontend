@@ -17,6 +17,7 @@ export class AccountComponent implements OnInit{
   userData :any = {}
   amount:any = {}
   allStocks:any = {}
+  //hello
   displayedColumns: string[] = ['Stock'];
   constructor(private tradingService: TradingServiceService, private router: Router) { }
   async ngOnInit(): Promise<void> {
