@@ -53,7 +53,7 @@
                     <td>{{data?.price}}</td>
                     <td>{{data?.sell_price}}</td>
                     <td>{{data?.qty}}</td>
-                    <td style="color: {{data?.sell_price >= data?.price ? 'green':'red'}}">{{data?.sell_price >= data?.price ? "+ ": ""}}{{((data?.sell_price - data?.price) * data?.qty )|number:'1.2-2'}}% </td>
+                    <td style="color: {{data?.sell_price >= data?.price ? 'green':'red'}}">{{data?.sell_price >= data?.price ? "+ ": ""}}{{((data?.sell_price - data?.price) * data?.qty )|number:'1.2-2'}} </td>
                     <td style="color: {{data?.sell_price >= data?.price ? 'green':'red'}}">{{data?.sell_price >= data?.price ? "+ ": ""}}{{((data?.sell_price - data?.price)/data?.price * 100) |number:'1.2-2' }}%</td>
                 </tr>
             </tbody>
