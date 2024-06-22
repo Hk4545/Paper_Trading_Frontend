@@ -17,9 +17,9 @@
                 </div>
                 <div style="display: flex; justify-content: space-between;">
                     <div style="font-size: 20px; color: white;">P&L :</div>
-                    <div style="display: flex; gap: 10px; color: {{ (currentHoldings - totalInvestment) >= 0 ? 'green' : '#db0404' }}">
-                        <div style="font-weight: 500; font-size: 20px;">{{ (currentInvestment - totalInvestment)|number:'1.2-2' }}</div>
-                        <div style="margin-top: 3px;">{{ (currentHoldings - totalInvestment) >= 0 ? '+ ' : '' }}{{ ((currentInvestment - totalInvestment) / totalInvestment * 100) | number:'1.2-2' }}%</div>
+                    <div style="display: flex; gap: 10px;">
+                        <div style="font-weight: 500; font-size: 20px;  color: {{ (currentHoldings - totalInvestment) >= 0 ? 'green' : '#db0404' }}">{{ (currentInvestment - totalInvestment)|number:'1.2-2' }}</div>
+                        <div style="margin-top: 3px;  color: {{ (currentHoldings - totalInvestment) >= 0 ? 'green' : '#db0404' }}">{{ (currentHoldings - totalInvestment) >= 0 ? '+ ' : '' }}{{ ((currentInvestment - totalInvestment) / totalInvestment * 100) | number:'1.2-2' }}%</div>
                     </div>
                 </div>
             </div>
